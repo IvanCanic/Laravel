@@ -1,0 +1,148 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 84px;
+}
+
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+.home-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        font-size: 3rem;
+    }
+}
+
+.posts-section {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .post {
+        margin: 0 0 1rem 0;
+        padding: 1rem;
+        width: 50%;
+        background-color: #f4f4f4;
+
+        .btn-container {
+            display: flex;
+            justify-content: space-around;
+
+            a, input {
+                border: 1px solid black;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+                background: blue;
+                color:white;
+            }
+
+            a:hover, input:hover {
+                background: lighten($color: #000000, $amount: 80%);
+                text-decoration: none;
+            }
+        }
+    }
+
+}
+
+#createpost {
+
+    display: flex;
+    justify-content: center;
+
+    .f {
+        display: flex;
+        flex-direction: column;
+        //justify-content: center;
+        align-items: center;
+        padding: 30px;
+        max-width: 800px;
+        min-width: 400px;
+        background: blue;
+
+        label {
+            color: white;
+            font-size: 2rem;
+        }
+
+        input, select, textarea {
+            width: 100%;
+        }
+    }
+}
+
+.comments {
+    background:lightblue;
+    width: 50%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    .comment {
+        margin: 3px;
+        border: 1px solid white;
+        padding: 1rem;
+    }
+}
+
+.errorfield {
+    color:red;
+    padding: 0.5rem;
+}
